@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eefee’s Lovely Heaven — Heavenly style, everyday glow</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <!-- put your big logo at images/logo.png -->
+        <img src="c:\Users\maimu\Downloads\eefees lovely heaven logo.jpg" alt="Eefee’s Lovely Heaven" class="logo" />
+      </div>
+      <div class="brand-text">
+        <h1 class="brand-title">Eefee’s Lovely Heaven</h1>
+        <p class="brand-tag">Heavenly style, everyday glow.</p>
+      </div>
+
+      <div class="header-actions">
+        <button class="btn ghost" id="go-cart-top" onclick="goToCart()">🛒 Cart (<span id="cart-count-top">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h2>Curated accessories & beauty — chosen with love</h2>
+        <p class="hero-sub">Shop our select pieces — elegant, modest, and dreamy.</p>
+        <a class="btn primary" href="#shop">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section id="shop" class="shop-section">
+      <div class="container">
+        <h2 class="section-title">Shop</h2>
+
+        <div class="products-grid">
+
+          <!-- Product 1: Pearl earrings & necklaces -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="c:\Users\maimu\OneDrive\Pictures\Camera Roll\necklace pics.jpeg" alt="Pearl earrings and necklaces" />
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Pearl earrings & necklaces</h3>
+              <p class="product-price">₦3,000</p>
+              <p class="product-desc">Elegant pearl designs — soft, classy and perfect for every occasion.</p>
+              <div class="product-actions">
+                <button class="btn" onclick="addToCart('Pearl earrings & necklaces', 3000)">Add to Cart</button>
+                <button class="btn outline" onclick="buyNowSingle('Pearl earrings & necklaces',3000)">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Erasable pen -->
+          <article class="product-card">
+            <div class="product-media">
+              <img src="" alt="Erasable pen" />
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Erasable pen</h3>
+              <p class="product-price">₦500</p>
+              <p class="product-desc">Smooth erasable gel pen — neat, reliable, and cute for notes & journaling.</p>
+              <div class="product-actions">
+                <button class="btn" onclick="addToCart('Erasable pen', 500)">Add to Cart</button>
+                <button class="btn outline" onclick="buyNowSingle('Erasable pen',500)">Buy Now</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="shop-footer">
+          <a class="btn ghost" id="go-cart" href="cart.html">🛍 Go to Cart</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-text">DM to order or use the cart to confirm your purchase.</p>
+        <div class="contact-buttons">
+          <a class="btn primary" id="ig-btn" href="https://instagram.com/YOURINSTAGRAM" target="_blank">Instagram</a>
+          <a class="btn outline" id="wa-btn" href="https://+2349044537895" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Eefee’s Lovely Heaven — Heavenly style, everyday glow.</p>
+    </div>
+  </footer>
+</body>
+</html>
