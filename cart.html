@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Cart — Eefee’s Lovely Heaven</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div>
+        <img src="c:\Users\maimu\Downloads\eefees lovely heaven logo.jpg" class="logo" alt="Eefee's Lovely Heaven logo" />
+      </div>
+      <div>
+        <h1 class="brand-title">Your Cart</h1>
+        <p class="brand-tag">Confirm your order and proceed to payment.</p>
+      </div>
+      <div>
+        <button class="btn ghost" onclick="goToShop()">← Back to Shop</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:30px 18px;">
+    <div class="cart-container">
+      <h2 style="color:var(--white);">Items</h2>
+      <ul id="cart-list" class="cart-list"></ul>
+      <p class="total">Total: <span id="total-price">₦0</span></p>
+
+      <div class="account-details">
+        <h3>Payment Details</h3>
+        <p><strong>Account Name:</strong> Eefee’s Lovely Heaven Ventures</p>
+        <p><strong>Bank:</strong> GTBank</p>
+        <p><strong>Account Number:</strong> 0123456789</p>
+      </div>
+
+      <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn primary" onclick="buyNow()">✅ Confirm & Message Us</button>
+        <button class="btn ghost" onclick="clearCart()">🧺 Clear Cart</button>
+      </div>
+    </div>
+
+    <div style="margin-top:22px;text-align:center;">
+      <a class="btn outline" href="https://instagram.com/YOURINSTAGRAM" target="_blank">Instagram</a>
+      <a class="btn ghost" href="https://wa.me/+2349044357895" target="_blank">WhatsApp</a>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 Eefee’s Lovely Heaven</p>
+  </footer>
+
+  <script>
+    function goToShop(){ window.location.href = "index.html"; }
+  </script>
+</body>
+</html>
